@@ -1,0 +1,86 @@
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+/* /////////about us is strat here--------- */
+.about_us {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.about_us .about_left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 10;
+}
+.about_us #company-background {
+  margin-bottom: 50px;
+}
+.about_us #company-background .heading {
+  text-align: left;
+  margin-left: 20px;
+}
+.about_us #company-background .content {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+  align-items: center;
+}
+.about_us #company-background .content img {
+  width: 50%;
+  height: auto;
+}
+.about_us #company-background .content p {
+  text-align: justify;
+}
+.about_us .our-team h2 {
+  border-bottom: 2px solid black;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.about_us .our-team .carousel {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+}
+.about_us .our-team .carousel img {
+  width: 100%;
+  height: 500px;
+}
+.about_us .our-team .carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.232);
+}
+.about_us .about_right {
+  flex: 2;
+}
+
+/* //////serveces page start------------ */
+.services-container .heading {
+  text-align: center;
+  margin-top: 50px;
+}
+.services-container .heading h1 {
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+.services-container .services {
+  width: 90%;
+  margin: auto;
+}
+.services-container .services .services-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.services-container .services .services-item a {
+  color: black;
+}
+.services-container .services .services-item .service-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.services-container .services .services-item .service-content img {
+  width: 30% !important;
+}/*# sourceMappingURL=styale.css.map */
