@@ -1,0 +1,89 @@
+/* Base Styles */
+:root {
+    --lightest: #F1FAEE;
+    --light-blue: #A8DADC;
+    --medium-blue: #669BBC;
+    --beige: #BCAA99;
+    --dark: #1D1335;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--lightest);
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, section, footer {
+    display: block;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: var(--medium-blue);
+    color: var(--lightest);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--lightest);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--beige);
+}
+
+/* Main Content Styles */
+main {
+    margin: 20px;
+}
+
+#featured, #services-snippet, #latest-blog, #diy-guides {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--dark);
+    color: var(--lightest);
+    text-align: left;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-company {
+	float:left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.footer-contact {
+	float:right;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
