@@ -1,97 +1,118 @@
 /* Color Scheme */
 
 :root {
---primary-color: #669BBC; /*mid blue / Air superiority blue */
---secondary-color: #A8DADC; /*light blue / Non Photo blue */
---tertiary-color: #E7DDD4; /*beige / Timberwolf */
---background-color: #FDFDFB; /*off white / Baby powder */
---accent-color: #1D1335; /*dark blue / Dark purple*/
---main-color:#F1FAEE; /*pale green / Honeydew */
+    --primary-color: #669BBC;
+    /*mid blue / Air superiority blue */
+    --secondary-color: #A8DADC;
+    /*light blue / Non Photo blue */
+    --tertiary-color: #E7DDD4;
+    /*beige / Timberwolf */
+    --background-color: #FDFDFB;
+    /*off white / Baby powder */
+    --accent-color: #1D1335;
+    /*dark blue / Dark purple*/
+    --main-color: #F1FAEE;
+    /*pale green / Honeydew */
 }
 
 
 /* Formatting for the html and body elements*/
-html, body {
-font-family: 'Open Sans', sans-serif;
-line-height: 1.6;
-color: var(--accent-color);
-background-color: var(--background-color);
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--accent-color);
+    background-color: var(--background-color);
 }
 
 main {
-display: flex;
-flex-direction: row; /* Layout aside and content side by side */
-flex-grow: 1;
-width: auto;
-margin: 20px auto;
-background-color: var(--main-color);
-padding: 20px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    /* Layout aside and content side by side */
+    flex-grow: 1;
+    width: auto;
+    margin: 20px auto;
+    background-color: var(--main-color);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 20px;
-background-color: #669BBC; /* Dark background for better contrast */
-font-family: 'Open Sans Condensed Bold';
-font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #669BBC;
+    /* Dark background for better contrast */
+    font-family: 'Open Sans Condensed Bold';
+    font-size: 20px;
 }
 
 header .logo img {
-height: 150px; /* Logo size can be adjusted */
+    height: 150px;
+    /* Logo size can be adjusted */
 }
 
 nav ul {
-list-style: none;
-padding: 0;
-display: flex;
-margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
 }
 
 nav ul li {
-margin-left: 20px; /* Spacing between links */
+    margin-left: 20px;
+    /* Spacing between links */
 }
 
 nav ul li a {
-text-decoration: none;
-color: white;
-padding: 10px; /* Padding to make the links easier to click */
-display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    /* Padding to make the links easier to click */
+    display: block;
 }
 
 nav ul li a:hover {
-background-color: #555; /* Hover effect for links */
+    background-color: #555;
+    /* Hover effect for links */
 }
 
 
 #categories {
 
-width: 100%;  /* Cover full width of its container, likely the body */
-max-height: 5vh;
+    width: 100%;
+    /* Cover full width of its container, likely the body */
+    max-height: 5vh;
 }
 
 aside {
-flex: 0 0 200px; /* Fixed width for the sidebar */
-background-color: var(--secondary-color);
-padding: 20px;
-height: 100vh;
-overflow: auto; /* Allows scrolling if content is too long */
+    flex: 0 0 200px;
+    /* Fixed width for the sidebar */
+    background-color: var(--secondary-color);
+    padding: 20px;
+    height: 100vh;
+    overflow: auto;
+    /* Allows scrolling if content is too long */
 }
 
 
-h1, h2, h3, h4 {
-font-family: 'Roboto', sans-serif;
-color: #1a1a1a;
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
 
 }
 
 .guide-list {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-}/*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*
 .guide {
 width: 30%;
 margin: 15px;
@@ -103,182 +124,217 @@ border: 1px solid var(--tertiary-color);
 */
 
 .guide a {
-text-decoration: none;
-color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .guide img {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .guide-info {
-padding: 10px;
+    padding: 10px;
 }
 
 .guide h2 {
-margin-top: 10px;
-color: var(--accent-color);
+    margin-top: 10px;
+    color: var(--accent-color);
 }
 
 .guide p {
-font-size: 0.9em;
-color: var(--accent-color);
+    font-size: 0.9em;
+    color: var(--accent-color);
 }
 
 #our-team {
-margin: 20px;
-padding: 20px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .team-member {
-display: flex;
-align-items: center;  /* Aligns the image and the text vertically in the center */
-margin-bottom: 20px;  /* Adds space between team members */
+    display: flex;
+    align-items: center;
+    /* Aligns the image and the text vertically in the center */
+    margin-bottom: 20px;
+    /* Adds space between team members */
 }
 
 .team-member img {
-width: 50%;  /* Smaller width for better layout */
-height: auto;  /* Maintain aspect ratio */
-margin-right: 20px;  /* Space between the image and the text */
+    width: 50%;
+    /* Smaller width for better layout */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 20px;
+    /* Space between the image and the text */
 }
 
 .member-info {
-flex-grow: 1;  /* Allows the text block to fill the rest of the space */
+    flex-grow: 1;
+    /* Allows the text block to fill the rest of the space */
 }
 
 
 .faq-question {
-background-color: var(--secondary-color); /* Light cyan background for contrast */
-border-left: 5px solid var(--primary-color); /* Blue left border for style */
-padding: 15px; /* Padding inside each FAQ block */
-margin-bottom: 20px; /* Space between each question */
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: var(--secondary-color);
+    /* Light cyan background for contrast */
+    border-left: 5px solid var(--primary-color);
+    /* Blue left border for style */
+    padding: 15px;
+    /* Padding inside each FAQ block */
+    margin-bottom: 20px;
+    /* Space between each question */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
 }
 
 .faq-question h2 {
-color: var(--accent-color); /* Blue color for question headings */
-margin-bottom: 10px; /* Space between heading and text */
+    color: var(--accent-color);
+    /* Blue color for question headings */
+    margin-bottom: 10px;
+    /* Space between heading and text */
 }
 
 .faq-question p {
-color: var(--accent-color); /* Dark blue for text to ensure readability */
-font-size: 1em; /* Appropriate font size for FAQ answers */
-line-height: 1.5; /* Line height for better readability */
+    color: var(--accent-color);
+    /* Dark blue for text to ensure readability */
+    font-size: 1em;
+    /* Appropriate font size for FAQ answers */
+    line-height: 1.5;
+    /* Line height for better readability */
 }
 
 .faq-question footer {
-text-align: right; /* Right-aligns the footer content */
-color: var(--tertiary-color); /* Soft contrast for footer text */
-font-style: italic; /* Italicize footer to differentiate from main content */
-font-size: 0.9em; /* Slightly smaller font size for footer */
-margin-top: 12px; /* Space above the footer for clear separation */
+    text-align: right;
+    /* Right-aligns the footer content */
+    color: var(--tertiary-color);
+    /* Soft contrast for footer text */
+    font-style: italic;
+    /* Italicize footer to differentiate from main content */
+    font-size: 0.9em;
+    /* Slightly smaller font size for footer */
+    margin-top: 12px;
+    /* Space above the footer for clear separation */
 }
 
-input[type="text"], input[type="email"], textarea {
-width: 100%; /* Full width */
-padding: 8px; /* Padding for better text visibility */
-margin: 10px 0; /* Margin for spacing between inputs */
-display: inline-block; /* Ensures proper alignment */
-border: 1px solid #ccc; /* Subtle border */
-box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 8px;
+    /* Padding for better text visibility */
+    margin: 10px 0;
+    /* Margin for spacing between inputs */
+    display: inline-block;
+    /* Ensures proper alignment */
+    border: 1px solid #ccc;
+    /* Subtle border */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
 }
 
 input[type="submit"] {
-background-color: var(--primary-color);
-color: white;
-padding: 14px 20px;
-border: none;
-cursor: pointer;
-width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
 input[type="submit"]:hover {
-background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 form {
-max-width: 500px;
-margin: auto;
-padding: 20px;
-border: 1px solid #ccc;
-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 
 /* Footer Styles */
 footer {
-width: 100%;
-position: relative;
-bottom: 0;
-clear:both;
-background-color: var(--primary-color);
-color: var(--background-color);
-font-size: 0.9em;
-padding: 10px 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-text-align: left;
-margin-top:auto;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    clear: both;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 0.9em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: auto;
 }
 
-.footer-nav, .footer-contact {
-flex: 1;
-padding: 0 10px;
+.footer-nav,
+.footer-contact {
+    flex: 1;
+    padding: 0 10px;
 }
 
 ul#footer-list {
-list-style-type: none;
-padding: 0;
-margin: 0;
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .footer-nav ul li {
-margin-right: 10px;
+    margin-right: 10px;
 }
 
-.footer-contact h3, .footer-contact p {
-margin: 0;
-padding: 5px 0;
+.footer-contact h3,
+.footer-contact p {
+    margin: 0;
+    padding: 5px 0;
 }
 
 @media (max-width: 768px) {
-footer {
-flex-direction: column;
-text-align: center;
-}
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.footer-nav ul, .footer-contact {
-width: 100%;
-text-align: center;
-padding: 10px 0;
-}
+    .footer-nav ul,
+    .footer-contact {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
 
-.footer-nav ul {
-flex-direction: column;
-}
+    .footer-nav ul {
+        flex-direction: column;
+    }
 
-.footer-nav ul li {
-margin-right: 0;
-margin-bottom: 5px;
-}
+    .footer-nav ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
 }
 
 /* Testimonial Styles */
 #testimonials {
-background-color: var(--tertiary-color);
-padding: 10px;
-max-width: 800px;
-margin: 20px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    max-width: 800px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
 blockquote {
-margin: 0;  /* Removes default margin */
-padding: 0;  /* Removes default padding */
+    margin: 0;
+    /* Removes default margin */
+    padding: 0;
+    /* Removes default padding */
 }

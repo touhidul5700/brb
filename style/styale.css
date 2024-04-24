@@ -1,4 +1,8 @@
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
@@ -20,13 +24,18 @@ h1, h2, h3, h4, h5 {
 .about_us #company-background .heading {
   text-align: left;
   margin-left: 20px;
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+.about_us #company-background .heading h1 {
+  padding: 0;
 }
 .about_us #company-background .content {
   display: flex;
   width: 90%;
   margin: auto;
   gap: 20px;
-  align-items: center;
+  align-items: justify;
 }
 .about_us #company-background .content img {
   width: 50%;
@@ -35,22 +44,21 @@ h1, h2, h3, h4, h5 {
 .about_us #company-background .content p {
   text-align: justify;
 }
-.about_us .our-team h2 {
-  border-bottom: 2px solid black;
+.about_us #our-team {
+  display: flex;
+  flex-direction: column;
+}
+.about_us #our-team h2 {
+  border-bottom: 2px solid rgb(0, 0, 0);
   display: inline-block;
   margin-bottom: 20px;
 }
-.about_us .our-team .carousel {
-  width: 90%;
-  height: 500px;
-  margin: auto;
+.about_us #our-team .member-info {
+  text-align: justify;
 }
-.about_us .our-team .carousel img {
-  width: 100%;
-  height: 500px;
-}
-.about_us .our-team .carousel .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.232);
+.about_us #our-team .team-member img {
+  width: 300px;
+  height: auto;
 }
 .about_us .about_right {
   flex: 2;
@@ -60,6 +68,7 @@ h1, h2, h3, h4, h5 {
 .services-container .heading {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .services-container .heading h1 {
   border-bottom: 1px solid black;
@@ -68,10 +77,15 @@ h1, h2, h3, h4, h5 {
 .services-container .services {
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
 .services-container .services .services-item {
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 .services-container .services .services-item a {
   color: black;
@@ -80,7 +94,81 @@ h1, h2, h3, h4, h5 {
   display: flex;
   gap: 20px;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: justify;
 }
 .services-container .services .services-item .service-content img {
-  width: 30% !important;
+  width: 50% !important;
+}
+
+/* Faq start here----------- */
+.faq .heading {
+  text-align: center;
+  margin-top: 50px;
+}
+.faq .heading h1 {
+  border-bottom: 2px solid black;
+  display: inline;
+}
+.faq .accordionWrapper {
+  padding: 30px;
+  background: #fff;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+.faq .accordionItem {
+  float: left;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Open-sans", Arial, sans-serif;
+}
+.faq .accordionItemHeading {
+  cursor: pointer;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+  background: #669bbc;
+  color: #fff;
+  width: 100%;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.faq .close .accordionItemContent {
+  height: 0px;
+  transition: height 1s ease-out;
+  transform: scaleY(0);
+  float: left;
+  display: block;
+}
+.faq .open .accordionItemContent {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  display: block;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+  box-sizing: border-box;
+}
+.faq .open .accordionItemHeading {
+  margin: 0px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: rgb(110, 146, 170);
+  color: #ffffff;
 }/*# sourceMappingURL=styale.css.map */
