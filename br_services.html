@@ -11,19 +11,33 @@
 </head>
 
 <body>
+    <!-- navigation----- -->
     <header>
         <nav>
-            <a href="index.html" class="logo"><img src="br_logo_comp.png" alt="Blackbox Repairs" id="logo"></a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="br_about_us.html">About Us</a></li>
-                <li><a href="br_services.html">Services</a></li>
-                <li><a href="br_book_a_repair.html">Book A Repair</a></li>
-                <li><a href="br_diy_guides.html">DIY Guides</a></li>
-                <li><a href="br_faq.html">FAQ</a></li>
-                <li><a href="br_contact_us.html">Contact Us</a></li>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark cross"></i></a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="br_about_us.html">About Us</a></li>
+                <li><a class="nav-link" href="br_services.html">Services</a></li>
+                <li><a class="nav-link" href="br_book_a_repair.html">Book A Repair</a></li>
+                <li><a class="nav-link" href="br_diy_guides.html">DIY Guides</a></li>
+                <li><a class="nav-link" href="br_faq.html">FAQ</a></li>
+                <li><a class="nav-link" href="br_contact_us.html">Contact Us</a></li>
+            </ul>
+            <ul class="navbar">
+                <li><a href="index.html"><img class="nav-logo" src="br_logo_comp.png" alt=""></a></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="br_about_us.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="br_services.html">Services</a></li>
+                <li class="hideOnMobile"><a href="br_book_a_repair.html">Book A Repair</a></li>
+                <li class="hideOnMobile"><a href="br_diy_guides.html">DIY Guides</a></li>
+                <li class="hideOnMobile"><a href="br_faq.html">FAQ</a></li>
+                <li class="hideOnMobile"><a href="br_contact_us.html">Contact Us</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars cross"></i></a>
+                </li>
             </ul>
         </nav>
+
     </header>
 
 
@@ -140,27 +154,54 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-nav">
-            <ul id="footer-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="br_about_us.html">About Us</a></li>
-                <li><a href="br_services.html">Services</a></li>
-                <li><a href="br_book_a_repair.html">Book A Repair</a></li>
-                <li><a href="br_diy_guides.html">DIY Guides</a></li>
-                <li><a href="br_faq.html">FAQ</a></li>
-                <li><a href="br_contact_us.html">Contact Us</a></li>
-            </ul>
+    <!-- footer---- -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-inner1">
+                <h2>About Us</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, cum?Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Distinctio facilis error architecto aspernatur voluptatem esse, fuga
+                    perspiciatis cum sequi atque.</p>
+            </div>
+            <div class="footer-inner2">
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <form action="" class="form-info">
+                        <p>Email: <a href="mailto: help@blackboxrepairs.com">help@blackboxrepairs.com</a></p>
+                        <p>Phone: <a href="tel:5205556789">520-555-6789</a></p>
+                        <p>Address: <a href="">1234 Fake St. Tucson Az 87654</a></p>
+                    </form>
+
+                </div>
+            </div>
+            <div class="footer-inner3">
+                <h2>Social Media</h2>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-main footer-main2">
+            <div class="footer-inner4">
+                <ul class="footer-list" id="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="br_about_us.html">About Us</a></li>
+                    <li><a href="br_services.html">Services</a></li>
+                    <li><a href="br_book_a_repair.html">Book A Repair</a></li>
+                    <li><a href="br_diy_guides.html">DIY Guides</a></li>
+                    <li><a href="br_faq.html">FAQ</a></li>
+                    <li><a href="br_contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="footer-contact">
-            <h3>Contact Us</h3>
-            <p>Email: <a href="mailto: help@blackboxrepairs.com">help@blackboxrepairs.com</a></p>
-            <p>Phone: <a href="tel:5205556789">520-555-6789</a></p>
-            <p>Address: <a href="">1234 Fake St. Tucson Az 87654</a></p>
-        </div>
-        <!-- Add additional footer content such as contact info, social links here -->
     </footer>
+
+    <script src="script.js"></script>
+    <!-- kit code -->
+    <script src="https://kit.fontawesome.com/a5fff4c5b6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

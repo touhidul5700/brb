@@ -1,103 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>DIY Guides - Black Box Repairs</title>
-<link rel="stylesheet" href="br_styles.css"/>
+    <meta charset="UTF-8">
+    <title>DIY Guides - Black Box Repairs</title>
+    <link rel="stylesheet" href="style/styale.css" />
 </head>
+
 <body>
-<header>
-<nav>
-<a href="index.html" class="logo"><img src="br_logo_comp.png" alt="Blackbox Repairs" id="logo"></a>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="br_about_us.html">About Us</a></li>
-<li><a href="br_services.html">Services</a></li>
-<li><a href="br_book_a_repair.html">Book A Repair</a></li>
-<li><a href="br_diy_guides.html">DIY Guides</a></li>
-<li><a href="br_faq.html">FAQ</a></li>
-<li><a href="br_contact_us.html">Contact Us</a></li>
-</ul>
-</nav>
-</header>
+
+    <!-- navigation----- -->
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark cross"></i></a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="br_about_us.html">About Us</a></li>
+                <li><a class="nav-link" href="br_services.html">Services</a></li>
+                <li><a class="nav-link" href="br_book_a_repair.html">Book A
+                        Repair</a></li>
+                <li><a class="nav-link" href="br_diy_guides.html">DIY Guides</a></li>
+                <li><a class="nav-link" href="br_faq.html">FAQ</a></li>
+                <li><a class="nav-link" href="br_contact_us.html">Contact Us</a></li>
+            </ul>
+            <ul class="navbar">
+                <li><a href="#"><img class="nav-logo" src="br_logo_comp.png" alt></a></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="br_about_us.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="br_services.html">Services</a></li>
+                <li class="hideOnMobile"><a href="br_book_a_repair.html">Book A
+                        Repair</a></li>
+                <li class="hideOnMobile"><a href="br_diy_guides.html">DIY
+                        Guides</a></li>
+                <li class="hideOnMobile"><a href="br_faq.html">FAQ</a></li>
+                <li class="hideOnMobile"><a href="br_contact_us.html">Contact
+                        Us</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars cross"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main-guides">
+
+        <div class="categories" id="categories">
+            <h2>Guide Categories</h2>
+            <ul>
+                <li><a href="phones.html">Phones</a></li>
+                <li><a href="consoles.html">Video Game Consoles</a></li>
+                <li><a href="laptops.html">Laptops</a></li>
+            </ul>
+        </div>
+
+        <h1 class="guide-heading">DIY Guides for Common Devices</h1>
+
+        <section class="guide-list">
+
+            <div class="common-devices">
+
+                <!-- one--- -->
+                <div>
+                    <article class="guide">
+                        <a href="guide1.html">
+                            <img class="device-img" src="iphone.jpg" alt="iPhone Repair Guide">
+                            <div class="guide-info">
+                                <h2>iPhone Repair Guide</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- two--- -->
+                <div>
+                    <article class="guide">
+                        <a href="guide2.html">
+                            <img class="device-img" src="samsungphone.jpg" alt="Samsung Galaxy Repair Guide">
+                            <div class="guide-info">
+                                <h2>Samsung Galaxy Repair Guide</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- three--- -->
+                <div>
+                    <!-- New Laptop Repair Guide -->
+                    <article class="guide">
+                        <a href="guide-laptop.html">
+                            <img class="device-img" src="laptop.jpg" alt="Laptop Repair Guide">
+                            <div class="guide-info">
+                                <h2>Laptop Repair Guide</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- four---- -->
+                <div>
+                    <!-- New Video Game Console Repair Guide -->
+                    <article class="guide">
+                        <a href="guide-console.html">
+                            <img class="device-img" src="videogame.jpg" alt="Video Game Console Repair Guide">
+                            <div class="guide-info">
+                                <h2>Video Game Console Repair Guide</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+            </div>
+            <!-- Additional guides can be added in similar structure -->
+        </section>
+    </main>
+
+    <!-- footer---- -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-inner1">
+                <h2>About Us</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias, cum?Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Distinctio facilis error architecto aspernatur voluptatem
+                    esse, fuga perspiciatis cum sequi atque.</p>
+            </div>
+            <div class="footer-inner2">
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <form action class="form-info">
+                        <p>Email: <a href="mailto: help@blackboxrepairs.com">help@blackboxrepairs.com</a></p>
+                        <p>Phone: <a href="tel:5205556789">520-555-6789</a></p>
+                        <p>Address: <a href>1234 Fake St. Tucson Az 87654</a></p>
+                    </form>
+
+                </div>
+            </div>
+            <div class="footer-inner3">
+                <h2>Social Media</h2>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-main footer-main2">
+            <div class="footer-inner4">
+                <ul class="footer-list" id="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="br_about_us.html">About Us</a></li>
+                    <li><a href="br_services.html">Services</a></li>
+                    <li><a href="br_book_a_repair.html">Book A Repair</a></li>
+                    <li><a href="br_diy_guides.html">DIY Guides</a></li>
+                    <li><a href="br_faq.html">FAQ</a></li>
+                    <li><a href="br_contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
 
 
-<div id="categories">
-
-<h3>Guide Categories</h3>
-<ul>
-<li><a href="phones.html">Phones</a></li>
-<li><a href="consoles.html">Video Game Consoles</a></li>
-<li><a href="laptops.html">Laptops</a></li>
-</ul>
-
-
-<main>
-<h1>DIY Guides for Common Devices</h1>
-<section class="guide-list">
-<article class="guide">
-<a href="guide1.html">
-<img src="iphone.jpg" alt="iPhone Repair Guide">
-<div class="guide-info">
-<h2>iPhone Repair Guide</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-</a>
-</article>
-<article class="guide">
-<a href="guide2.html">
-<img src="samsungphone.jpg" alt="Samsung Galaxy Repair Guide">
-<div class="guide-info">
-<h2>Samsung Galaxy Repair Guide</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-</a>
-</article>
-
-<!-- New Laptop Repair Guide -->
-<article class="guide">
-<a href="guide-laptop.html">
-<img src="laptop.jpg" alt="Laptop Repair Guide">
-<div class="guide-info">
-<h2>Laptop Repair Guide</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
-</a>
-</article>
-<!-- New Video Game Console Repair Guide -->
-<article class="guide">
-<a href="guide-console.html">
-<img src="videogame.jpg" alt="Video Game Console Repair Guide">
-<div class="guide-info">
-<h2>Video Game Console Repair Guide</h2>
-<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-</a>
-</article>
-<!-- Additional guides can be added in similar structure -->
-</section>
-</main>
-
-<footer>
-<div class="footer-nav">
-<ul id="footer-list">
-<li><a href="index.html">Home</a></li>
-<li><a href="br_about_us.html">About Us</a></li>
-<li><a href="br_services.html">Services</a></li>
-<li><a href="br_book_a_repair.html">Book A Repair</a></li>
-<li><a href="br_diy_guides.html">DIY Guides</a></li>
-<li><a href="br_faq.html">FAQ</a></li>
-<li><a href="br_contact_us.html">Contact Us</a></li>
-</ul> 
-</div>
-
-<div class="footer-contact">
-<h3>Contact Us</h3>
-<p>Email: <a href="mailto: help@blackboxrepairs.com">help@blackboxrepairs.com</a></p>
-<p>Phone: <a href="tel:5205556789">520-555-6789</a></p>
-<p>Address: <a href="">1234 Fake St. Tucson Az 87654</a></p>
-</div>
-<!-- Add additional footer content such as contact info, social links here -->
-</footer>
+    <script src="script.js"></script>
+    <!-- kit code -->
+    <script src="https://kit.fontawesome.com/a5fff4c5b6.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

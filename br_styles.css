@@ -25,58 +25,7 @@ body {
     background-color: var(--background-color);
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    /* Layout aside and content side by side */
-    flex-grow: 1;
-    width: auto;
-    margin: 20px auto;
-    background-color: var(--main-color);
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #669BBC;
-    /* Dark background for better contrast */
-    font-family: 'Open Sans Condensed Bold';
-    font-size: 20px;
-}
-
-header .logo img {
-    height: 150px;
-    /* Logo size can be adjusted */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-    /* Spacing between links */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    /* Padding to make the links easier to click */
-    display: block;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-    /* Hover effect for links */
-}
 
 
 #categories {
@@ -247,80 +196,12 @@ input[type="submit"]:hover {
     background-color: var(--secondary-color);
 }
 
-form {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
 
 
-/* Footer Styles */
-footer {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    clear: both;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    font-size: 0.9em;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    margin-top: auto;
-}
 
-.footer-nav,
-.footer-contact {
-    flex: 1;
-    padding: 0 10px;
-}
 
-ul#footer-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
 
-.footer-nav ul li {
-    margin-right: 10px;
-}
 
-.footer-contact h3,
-.footer-contact p {
-    margin: 0;
-    padding: 5px 0;
-}
-
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-nav ul,
-    .footer-contact {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .footer-nav ul {
-        flex-direction: column;
-    }
-
-    .footer-nav ul li {
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
-}
 
 /* Testimonial Styles */
 #testimonials {

@@ -2,77 +2,114 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Black Box Repairs - Home</title>
-    <link rel="stylesheet" href="br_styles.css" />
+  <meta charset="UTF-8">
+  <title>Black Box Repairs - Home</title>
+
+  <!--  <link rel="stylesheet" href="br_styles.css" />  -->
+  <link rel="stylesheet" href="style/styale.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo"><img src="br_logo_comp.png" alt="Blackbox Repairs" id="logo"></a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="br_about_us.html">About Us</a></li>
-                <li><a href="br_services.html">Services</a></li>
-                <li><a href="br_book_a_repair.html">Book A Repair</a></li>
-                <li><a href="br_diy_guides.html">DIY Guides</a></li>
-                <li><a href="br_faq.html">FAQ</a></li>
-                <li><a href="br_contact_us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+
+  <!-- navigation----- -->
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark cross"></i></a></li>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="br_about_us.html">About Us</a></li>
+        <li><a class="nav-link" href="br_services.html">Services</a></li>
+        <li><a class="nav-link" href="br_book_a_repair.html">Book A Repair</a></li>
+        <li><a class="nav-link" href="br_diy_guides.html">DIY Guides</a></li>
+        <li><a class="nav-link" href="br_faq.html">FAQ</a></li>
+        <li><a class="nav-link" href="br_contact_us.html">Contact Us</a></li>
+      </ul>
+      <ul class="navbar">
+        <li><a href="index.html"><img class="nav-logo" src="br_logo_comp.png" alt=""></a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="br_about_us.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="br_services.html">Services</a></li>
+        <li class="hideOnMobile"><a href="br_book_a_repair.html">Book A Repair</a></li>
+        <li class="hideOnMobile"><a href="br_diy_guides.html">DIY Guides</a></li>
+        <li class="hideOnMobile"><a href="br_faq.html">FAQ</a></li>
+        <li class="hideOnMobile"><a href="br_contact_us.html">Contact Us</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars cross"></i></a></li>
+      </ul>
+    </nav>
+
+  </header>
 
 
-
-    <main>
-        <!-- Banner or featured section -->
-        <section id="featured">
-            <h1>Welcome to Black Box Repairs</h1>
-            <p>Your one-stop solution for all electronic repairs</p>
-            <!-- Image or carousel goes here -->
-        </section>
-
-        <!-- Services snippet -->
-        <section id="services-snippet">
-            <h2><a href="br_services.html">Our Services</a></h2>
-            <!-- Brief description of services with links to the services page -->
-        </section>
-
-        <!-- Latest from the blog -->
-        <section id="br-repair">
-            <h2><a href="br_book_a_repair.html">Let Us Repair Your Tech</a></h2>
-
-        </section>
-
-        <!-- DIY Guides snippet -->
-        <section id="diy-guides">
-            <h2><a href="br_diy_guides.html">Or Repair It Yourself</a></h2>
-            <!-- Thumbnails/links to some DIY guides -->
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-nav">
-            <ul id="footer-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="br_about_us.html">About Us</a></li>
-                <li><a href="br_services.html">Services</a></li>
-                <li><a href="br_book_a_repair.html">Book A Repair</a></li>
-                <li><a href="br_diy_guides.html">DIY Guides</a></li>
-                <li><a href="br_faq.html">FAQ</a></li>
-                <li><a href="br_contact_us.html">Contact Us</a></li>
-            </ul>
+  <!-- featured---- -->
+  <section class="featured">
+    <div class="container">
+      <div class="featured-item">
+        <div class="featured-text">
+          <h4>
+            <span class="featured-text1"> Your one-stop solution for all electronic repairs</span>
+            <span class="featured-text2">Welcome to </span>
+            <span class="featured-text3">Black Box <span class="repair">Repairs</span></span>
+            <span class="featured-text4">Our Services
+              Let Us Repair Your Tech
+              Or Repair It Yourself</span>
+            <span class="featured-text6"><a href="#">Get Started Now</a> </span>
+          </h4>
         </div>
+      </div>
+    </div>
+  </section>
 
+
+
+
+  <!-- footer---- -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-inner1">
+        <h2>About Us</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, cum?Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Distinctio facilis error architecto aspernatur voluptatem esse, fuga
+          perspiciatis cum sequi atque.</p>
+      </div>
+      <div class="footer-inner2">
         <div class="footer-contact">
-            <h3>Contact Us</h3>
+          <h2>Contact Us</h2>
+          <form action="" class="form-info">
             <p>Email: <a href="mailto: help@blackboxrepairs.com">help@blackboxrepairs.com</a></p>
             <p>Phone: <a href="tel:5205556789">520-555-6789</a></p>
             <p>Address: <a href="">1234 Fake St. Tucson Az 87654</a></p>
+          </form>
+
         </div>
-        <!-- Add additional footer content such as contact info, social links here -->
-    </footer>
+      </div>
+      <div class="footer-inner3">
+        <h2>Social Media</h2>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-main footer-main2">
+      <div class="footer-inner4">
+        <ul class="footer-list" id="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="br_about_us.html">About Us</a></li>
+          <li><a href="br_services.html">Services</a></li>
+          <li><a href="br_book_a_repair.html">Book A Repair</a></li>
+          <li><a href="br_diy_guides.html">DIY Guides</a></li>
+          <li><a href="br_faq.html">FAQ</a></li>
+          <li><a href="br_contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- kit code -->
+  <script src="https://kit.fontawesome.com/a5fff4c5b6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
