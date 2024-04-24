@@ -259,7 +259,7 @@ nav li:first-child {
     display: block;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 767px) {
   .sidebar {
     width: 100%;
     background-color: black;
@@ -372,6 +372,104 @@ nav li:first-child {
   background-position: right;
 }
 
+/* ########## console ############################# */
+.main-consoles {
+  margin-bottom: 60px;
+}
+.main-consoles .console-heading {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 40px;
+}
+.main-consoles .console-list .common-devices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-consoles .console-list .common-devices .device-img {
+  width: 200px;
+  height: auto;
+}
+.main-consoles .console-list .common-devices .consoles a {
+  text-decoration: none;
+}
+.main-consoles .console-list .common-devices .consoles .console-info {
+  padding: 20px;
+}
+.main-consoles .console-list .common-devices .consoles .console-info h2 {
+  color: rgb(79, 179, 207);
+}
+.main-consoles .console-list .common-devices .consoles .console-info p {
+  color: rgb(57, 57, 57);
+}
+
+@media (max-width: 467px) {
+  .main-consoles .console-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  .main-consoles .console-list .common-devices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-consoles .console-list .common-devices .consoles .console-info {
+    padding: 10px;
+  }
+  .guide {
+    margin-bottom: 30px;
+  }
+}
+/* #####phones######################### */
+.main-phones {
+  margin-bottom: 60px;
+}
+.main-phones .console-heading {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 40px;
+}
+.main-phones .console-list .common-devices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-phones .console-list .common-devices .device-img {
+  width: 200px;
+  height: auto;
+}
+.main-phones .console-list .common-devices .consoles a {
+  text-decoration: none;
+}
+.main-phones .console-list .common-devices .consoles .console-info {
+  padding: 20px;
+}
+.main-phones .console-list .common-devices .consoles .console-info h2 {
+  color: rgb(79, 179, 207);
+}
+.main-phones .console-list .common-devices .consoles .console-info p {
+  color: rgb(57, 57, 57);
+}
+
+@media (max-width: 467px) {
+  .main-consoles .console-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  .main-consoles .console-list .common-devices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-consoles .console-list .common-devices .consoles .console-info {
+    padding: 10px;
+  }
+  .guide {
+    margin-bottom: 30px;
+  }
+}
 /* -----------------------------------------footer------------------------------------- */
 .footer {
   background-color: #669bbc;

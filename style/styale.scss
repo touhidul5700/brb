@@ -327,7 +327,7 @@ nav li:first-child {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
     .sidebar {
         width: 100%;
         background-color: black;
@@ -475,92 +475,201 @@ nav li:first-child {
     }
 }
 
+/* ########## console ############################# */
 
+.main-consoles{
+    margin-bottom: 60px;
+      .console-heading{
+        text-align: center;
+        margin-bottom: 60px;
+        font-size: 40px;
+      }
+    
+    
+    .console-list{
+      .common-devices{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .device-img{
+          width: 200px;
+          height: auto;
+        }
+        .consoles{
+          a{
+            text-decoration: none;
+          }
+          
+          .console-info{
+            padding: 20px;
+            h2{
+              color: rgb(79, 179, 207);
+            }
+            p{
+              color: rgb(57, 57, 57);
+            }
+          }
+        }
+      }
+    }
+      
+    }
+    
+    @media (max-width: 467px){
+    
+      .main-consoles .console-heading {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 30px;
+      }
+    
+      .main-consoles .console-list .common-devices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .main-consoles .console-list .common-devices .consoles .console-info {
+        padding: 10px;
+      }
+      .guide{
+        margin-bottom: 30px;
+      }
+    
+    }
+
+    /* #####phones######################### */
+    .main-phones{
+        margin-bottom: 60px;
+          .console-heading{
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 40px;
+          }
+        
+        
+        .console-list{
+          .common-devices{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .device-img{
+              width: 200px;
+              height: auto;
+            }
+            .consoles{
+              a{
+                text-decoration: none;
+              }
+              
+              .console-info{
+                padding: 20px;
+                h2{
+                  color: rgb(79, 179, 207);
+                }
+                p{
+                  color: rgb(57, 57, 57);
+                }
+              }
+            }
+          }
+        }
+          
+        }
+        
+        @media (max-width: 467px){
+        
+          .main-consoles .console-heading {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 30px;
+          }
+        
+          .main-consoles .console-list .common-devices {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .main-consoles .console-list .common-devices .consoles .console-info {
+            padding: 10px;
+          }
+          .guide{
+            margin-bottom: 30px;
+          }
+        }
+        
 /* -----------------------------------------footer------------------------------------- */
 .footer {
     background-color: #669bbc;
     padding-bottom: 10px;
-
+  
     .footer-main {
-        color: #fff;
-        padding: 20px;
-        text-align: center;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+  
+      .footer-contact {
+        h2 {
+          font-size: 30px;
+        }
         display: flex;
-        align-items: center;
-
-        .footer-contact {
-            h2 {
-                font-size: 30px;
-            }
-
-            display: flex;
-            flex-direction: column;
-            line-height: 5px;
-
-            .form-info {
-                text-align: start;
-                padding-left: 100px;
-
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
-            }
+        flex-direction: column;
+        line-height: 5px;
+        .form-info {
+          text-align: start;
+          padding-left: 100px;
+          a {
+            text-decoration: none;
+            color: black;
+          }
         }
-
-        .footer-inner1 {
-            h2 {
-                font-size: 30px;
-            }
-
-            p {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            width: 40%;
+      }
+  
+      .footer-inner1 {
+        h2 {
+          font-size: 30px;
         }
-
-        .footer-inner2 {
-            width: 30%;
+        p {
+          padding-left: 20px;
+          padding-right: 20px;
         }
-
-        .footer-inner3 {
-            h2 {
-                font-size: 30px;
-            }
-
-            width: 30%;
-            font-size: 30px;
-
+        width: 40%;
+      }
+      .footer-inner2 {
+        width: 30%;
+      }
+      .footer-inner3 {
+        h2 {
+          font-size: 30px;
+        }
+        width: 30%;
+        font-size: 30px;
+        a {
+          margin-right: 10px;
+          color: rgb(87, 87, 87);
+        }
+      }
+      .footer-inner4 {
+        .footer-list {
+          list-style-type: none;
+          display: flex;
+          gap: 13px;
+          li {
             a {
-                margin-right: 10px;
-                color: rgb(87, 87, 87);
+              text-decoration: none;
+              color: white;
+              font-size: 16px;
             }
+          }
         }
-
-        .footer-inner4 {
-            .footer-list {
-                list-style-type: none;
-                display: flex;
-                gap: 13px;
-
-                li {
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
+      }
     }
-
     .footer-main2 {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
-}
+  }
 
 @media (max-width: 467px) {
     .services-container {/* services responsive */
@@ -948,7 +1057,7 @@ nav li:first-child {
 }
 
 
-@media (max-width: 467px) {
+@media(max-width: 467px) {
     .all-contacts .contacts {
         display: flex;
         flex-direction: column;
