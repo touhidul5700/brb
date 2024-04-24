@@ -19,7 +19,7 @@
 /* Formatting for the html and body elements*/
 html,
 body {
-    font-family: 'Open Sans', sans-serif;
+/*     font-family: 'Open Sans', sans-serif; */
     line-height: 1.6;
     color: var(--accent-color);
     background-color: var(--background-color);
@@ -46,14 +46,6 @@ aside {
 }
 
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Roboto', sans-serif;
-    color: #1a1a1a;
-
-}
 
 .guide-list {
     display: flex;

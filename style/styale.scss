@@ -1,15 +1,21 @@
 h1,
-h2,
 h3,
 h4,
 h5 {
     margin: 0;
 }
 
-
+h1 {
+    font-size: 40px !important;
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+.heading{
+    text-align: center;
+}
 /* /////////about us is strat here--------- */
 .about_us {
-    margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +100,6 @@ h5 {
 .services-container {
     .heading {
         text-align: center;
-        margin-top: 50px;
         margin-bottom: 50px;
 
         h1 {
@@ -328,6 +333,14 @@ nav li:first-child {
 }
 
 @media (max-width: 767px) {
+    .faq .accordionItemHeading{
+        font-size: 16px;
+    }
+    .main-phones .console-list .common-devices {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .sidebar {
         width: 100%;
         background-color: black;
@@ -477,203 +490,235 @@ nav li:first-child {
 
 /* ########## console ############################# */
 
-.main-consoles{
+.main-consoles {
     margin-bottom: 60px;
-      .console-heading{
+
+    .console-heading {
         text-align: center;
         margin-bottom: 60px;
         font-size: 40px;
-      }
-    
-    
-    .console-list{
-      .common-devices{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .device-img{
-          width: 200px;
-          height: auto;
-        }
-        .consoles{
-          a{
-            text-decoration: none;
-          }
-          
-          .console-info{
-            padding: 20px;
-            h2{
-              color: rgb(79, 179, 207);
-            }
-            p{
-              color: rgb(57, 57, 57);
-            }
-          }
-        }
-      }
     }
-      
+
+
+    .console-list {
+        .common-devices {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .device-img {
+                width: 200px;
+                height: auto;
+            }
+
+            .consoles {
+                a {
+                    text-decoration: none;
+                }
+
+                .console-info {
+                    padding: 20px;
+
+                    h2 {
+                        color: rgb(79, 179, 207);
+                    }
+
+                    p {
+                        color: rgb(57, 57, 57);
+                    }
+                }
+            }
+        }
     }
-    
-    @media (max-width: 467px){
-    
-      .main-consoles .console-heading {
+
+}
+
+@media (max-width: 467px) {
+
+    .main-consoles .console-heading {
         text-align: center;
         margin-bottom: 40px;
         font-size: 30px;
-      }
-    
-      .main-consoles .console-list .common-devices {
+    }
+
+    .main-consoles .console-list .common-devices {
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
-      .main-consoles .console-list .common-devices .consoles .console-info {
-        padding: 10px;
-      }
-      .guide{
-        margin-bottom: 30px;
-      }
-    
     }
 
-    /* #####phones######################### */
-    .main-phones{
+    .main-consoles .console-list .common-devices .consoles .console-info {
+        padding: 10px;
+    }
+
+    .guide {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* #####phones######################### */
+.main-phones {
+    margin-bottom: 60px;
+
+    .console-heading {
+        text-align: center;
         margin-bottom: 60px;
-          .console-heading{
-            text-align: center;
-            margin-bottom: 60px;
-            font-size: 40px;
-          }
-        
-        
-        .console-list{
-          .common-devices{
+        font-size: 40px;
+    }
+
+
+    .console-list {
+        .common-devices {
             display: flex;
             justify-content: center;
             align-items: center;
-            .device-img{
-              width: 200px;
-              height: auto;
+
+            .device-img {
+                width: 200px;
+                height: auto;
             }
-            .consoles{
-              a{
-                text-decoration: none;
-              }
-              
-              .console-info{
-                padding: 20px;
-                h2{
-                  color: rgb(79, 179, 207);
+
+            .consoles {
+                a {
+                    text-decoration: none;
                 }
-                p{
-                  color: rgb(57, 57, 57);
+
+                .console-info {
+                    padding: 20px;
+
+                    h2 {
+                        color: rgb(79, 179, 207);
+                    }
+
+                    p {
+                        color: rgb(57, 57, 57);
+                    }
                 }
-              }
             }
-          }
         }
-          
-        }
-        
-        @media (max-width: 467px){
-        
-          .main-consoles .console-heading {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 30px;
-          }
-        
-          .main-consoles .console-list .common-devices {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
-          .main-consoles .console-list .common-devices .consoles .console-info {
-            padding: 10px;
-          }
-          .guide{
-            margin-bottom: 30px;
-          }
-        }
-        
+    }
+
+}
+
+@media (max-width: 467px) {
+
+    .main-consoles .console-heading {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .main-consoles .console-list .common-devices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-consoles .console-list .common-devices .consoles .console-info {
+        padding: 10px;
+    }
+
+    .guide {
+        margin-bottom: 30px;
+    }
+}
+
 /* -----------------------------------------footer------------------------------------- */
 .footer {
     background-color: #669bbc;
     padding-bottom: 10px;
-  
+
     .footer-main {
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-  
-      .footer-contact {
-        h2 {
-          font-size: 30px;
-        }
+        color: #fff;
+        padding: 20px;
+        text-align: center;
         display: flex;
-        flex-direction: column;
-        line-height: 5px;
-        .form-info {
-          text-align: start;
-          padding-left: 100px;
-          a {
-            text-decoration: none;
-            color: black;
-          }
-        }
-      }
-  
-      .footer-inner1 {
-        h2 {
-          font-size: 30px;
-        }
-        p {
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-        width: 40%;
-      }
-      .footer-inner2 {
-        width: 30%;
-      }
-      .footer-inner3 {
-        h2 {
-          font-size: 30px;
-        }
-        width: 30%;
-        font-size: 30px;
-        a {
-          margin-right: 10px;
-          color: rgb(87, 87, 87);
-        }
-      }
-      .footer-inner4 {
-        .footer-list {
-          list-style-type: none;
-          display: flex;
-          gap: 13px;
-          li {
-            a {
-              text-decoration: none;
-              color: white;
-              font-size: 16px;
+        align-items: center;
+
+
+        .footer-contact {
+            h2 {
+                font-size: 30px;
             }
-          }
+
+            display: flex;
+            flex-direction: column;
+            line-height: 5px;
+
+            .form-info {
+                text-align: start;
+                padding-left: 100px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
         }
-      }
+
+        .footer-inner1 {
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            width: 40%;
+        }
+
+        .footer-inner2 {
+            width: 30%;
+        }
+
+        .footer-inner3 {
+            h2 {
+                font-size: 30px;
+            }
+
+            width: 30%;
+            font-size: 30px;
+
+            a {
+                margin-right: 10px;
+                color: rgb(87, 87, 87);
+            }
+        }
+
+        .footer-inner4 {
+            .footer-list {
+                list-style-type: none;
+                display: flex;
+                gap: 18px !important;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
+
     .footer-main2 {
-      display: flex;
-      justify-content: center;
+        display: flex;
+        justify-content: center;
     }
-  }
+}
 
 @media (max-width: 467px) {
-    .services-container {/* services responsive */
-         .services {
+    .main-guides .categories ul{
+        padding-left: 0;
+    }
+    .services-container {
+
+        /* services responsive */
+        .services {
             .services-item {
                 .service-content {
                     display: flex;
@@ -965,6 +1010,7 @@ nav li:first-child {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .main-guides .guide-list .common-devices .guide .guide-info {

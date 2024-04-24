@@ -1,14 +1,23 @@
 h1,
-h2,
 h3,
 h4,
 h5 {
   margin: 0;
 }
 
+h1 {
+  font-size: 40px !important;
+  margin-top: 50px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+}
+
+.heading {
+  text-align: center;
+}
+
 /* /////////about us is strat here--------- */
 .about_us {
-  margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +79,6 @@ h5 {
 /* //////serveces page start------------ */
 .services-container .heading {
   text-align: center;
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 .services-container .heading h1 {
@@ -260,6 +268,13 @@ nav li:first-child {
   }
 }
 @media (max-width: 767px) {
+  .faq .accordionItemHeading {
+    font-size: 16px;
+  }
+  .main-phones .console-list .common-devices {
+    flex-direction: column;
+    text-align: center;
+  }
   .sidebar {
     width: 100%;
     background-color: black;
@@ -525,7 +540,7 @@ nav li:first-child {
 .footer .footer-main .footer-inner4 .footer-list {
   list-style-type: none;
   display: flex;
-  gap: 13px;
+  gap: 18px !important;
 }
 .footer .footer-main .footer-inner4 .footer-list li a {
   text-decoration: none;
@@ -538,7 +553,12 @@ nav li:first-child {
 }
 
 @media (max-width: 467px) {
-  .services-container { /* services responsive */ }
+  .main-guides .categories ul {
+    padding-left: 0;
+  }
+  .services-container {
+    /* services responsive */
+  }
   .services-container .services .services-item .service-content {
     display: flex;
     gap: 20px;
@@ -760,6 +780,7 @@ nav li:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .main-guides .guide-list .common-devices .guide .guide-info {
     padding: 10px;
