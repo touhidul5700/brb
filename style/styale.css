@@ -187,7 +187,6 @@ h1 {
   color: #ffffff;
 }
 
-/* Noman vai------- */
 /* ####################### home page ############################### */
 nav {
   background-color: #669bbc;
@@ -514,7 +513,8 @@ nav li:first-child {
 }
 .footer .footer-main .footer-contact .form-info a {
   text-decoration: none;
-  color: black;
+  color: #575757;
+  line-height: 20px;
 }
 .footer .footer-main .footer-inner1 {
   width: 40%;
@@ -587,6 +587,8 @@ nav li:first-child {
   #our-team .team-member img {
     width: 100% !important;
   }
+}
+@media (max-width: 800px) {
   .footer-main {
     display: flex;
     flex-direction: column;
@@ -658,6 +660,7 @@ nav li:first-child {
   height: auto;
 }
 .allrepair .repair input[type=text],
+.allrepair .repair input[type=date],
 .allrepair .repair input[type=email],
 .allrepair .repair textarea {
   width: 100%;

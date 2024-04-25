@@ -8,3 +8,13 @@ function submitForm() {
     // Clear the form fields
     document.getElementById('contactForm').reset();
 }
+
+//Book A repair page Form Handlet
+function submitbook() {
+
+    // Show a submission message
+    alert("The repair is booked for x y date");
+
+    // Clear the form fields
+    document.getElementById('bookingForm').reset();
+}

@@ -244,8 +244,6 @@ h1 {
 
 }
 
-
-/* Noman vai------- */
 /* ####################### home page ############################### */
 
 //-------------------header----------------------------------
@@ -654,7 +652,8 @@ nav li:first-child {
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: #575757;
+                    line-height: 20px;
                 }
             }
         }
@@ -761,9 +760,8 @@ nav li:first-child {
         }
 
     }
-
-
-
+}
+@media (max-width: 800px) {
     .footer-main {
         display: flex;
         flex-direction: column;
@@ -855,6 +853,7 @@ nav li:first-child {
         margin-bottom: 30px;
 
         input[type="text"],
+        input[type="date"],
         input[type="email"],
         textarea {
             width: 100%;

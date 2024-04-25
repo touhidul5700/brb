@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Book A Repair - Black Box Repairs</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="br_logo_comp.png" type="image/x-icon">
     <link rel="stylesheet" href="style/styale.css" />
 </head>
 
@@ -23,7 +25,7 @@
                 <li><a class="nav-link" href="br_contact_us.html">Contact Us</a></li>
             </ul>
             <ul class="navbar">
-                <li><a href="#"><img class="nav-logo" src="br_logo_comp.png" alt=""></a></li>
+                <li><a href="index.html"><img class="nav-logo" src="br_logo_comp.png" alt=""></a></li>
                 <li class="hideOnMobile"><a href="index.html">Home</a></li>
                 <li class="hideOnMobile"><a href="br_about_us.html">About Us</a></li>
                 <li class="hideOnMobile"><a href="br_services.html">Services</a></li>
@@ -44,12 +46,15 @@
             <h1 class="repair-head">Book A Repair</h1>
         </div>
         <div class="repair">
-            <div><img src="booking.svg" alt=""></div>
+          <!--   action="submit_repair_request.php" -->
             <div>
-                <form action="submit_repair_request.php" method="post">
+                <form id="bookingForm" method="post" onsubmit="submitbook(); return false;">
                     <!-- Form fields for booking a repair -->
-                    <input type="text" name="name" placeholder="Your Name">
-                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="name" placeholder="Device Make" required>
+                    <input type="text" name="model" placeholder="Model#" required>
+                    <input type="date" name="model" placeholder="Date" required>
                     <!-- Add more fields as necessary -->
                     <input type="submit" value="Submit">
                 </form>
@@ -104,6 +109,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="formHandler.js"></script>
     <!-- kit code -->
     <script src="https://kit.fontawesome.com/a5fff4c5b6.js" crossorigin="anonymous"></script>
 </body>
